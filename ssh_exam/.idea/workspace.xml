@@ -42,8 +42,8 @@
       <file leaf-file-name="customerList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/customerList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="88" column="48" lean-forward="true" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
+            <state relative-caret-position="310">
+              <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
               <folding>
                 <element signature="e#3045#3052#1#HTML" expanded="true" />
               </folding>
@@ -115,7 +115,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="101" />
     <option name="y" value="278" />
     <option name="width" value="831" />
@@ -403,12 +403,12 @@
       <workItem from="1513167491706" duration="5532000" />
       <workItem from="1513181678096" duration="1591000" />
       <workItem from="1513211488011" duration="9557000" />
-      <workItem from="1513233099287" duration="8610000" />
+      <workItem from="1513233099287" duration="8636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26380000" />
+    <option name="totallyTimeSpent" value="26406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,8 +420,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="753" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -789,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/customerList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="88" column="48" lean-forward="true" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
+        <state relative-caret-position="310">
+          <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
           <folding>
             <element signature="e#3045#3052#1#HTML" expanded="true" />
           </folding>
