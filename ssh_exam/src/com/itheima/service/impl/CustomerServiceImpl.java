@@ -49,4 +49,14 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Customer> findAllCustomer() {
         return customerDao.findAllCustomer();
     }
+
+    /**
+     * 添加用户信息
+     *
+     * @param customer
+     */
+    @Override
+    public void addCustomer(Customer customer) {
+        customerDao.addCustomer(customer);
+    }
 }

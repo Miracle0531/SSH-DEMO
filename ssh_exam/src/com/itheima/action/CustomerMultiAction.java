@@ -1,7 +1,10 @@
 package com.itheima.action;
 
+import com.itheima.domain.Customer;
 import com.itheima.service.CustomerService;
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.commons.io.FileUtils;
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -81,6 +84,23 @@ public class CustomerMultiAction extends ActionSupport {
      */
     @Action(value = "addCustomer", results = {@Result(name = "success", location = "findAllCustomer", type = "redirectAction"), @Result(name = "input", location = "/error.jsp")})
     public String addCustomer() {
+
+        // 处理上传文件,保存到服务器端
+        File destFile = new File(ServletActionContext.getServletContext().getRealPath("/upload"), cusImgFileName);
+        try {
+            FileUtils.copyFile(cusImg, destFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // 完成添加客户的操作
+        Customer customer = new Customer();
+        customer.setCusName(cusName);
+        customer.setCusPhone(cusPhone);
+        String cusImgsrc = ServletActionContext.getRequest().getContextPath().concat("/upload").concat(cusImgFileName);
+        customer.setCusImgsrc(cusImgsrc);
+        customerService.addCustomer(customer);
+
         return SUCCESS;
     }
 }

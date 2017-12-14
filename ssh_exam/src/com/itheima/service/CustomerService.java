@@ -1,7 +1,6 @@
 package com.itheima.service;
 
 import com.itheima.domain.Customer;
-
 import java.util.List;
 
 /**
@@ -24,4 +23,11 @@ public interface CustomerService {
      * @return
      */
     public List<Customer> findAllCustomer();
+
+    /**
+     * 添加客户信息
+     *
+     * @param customer
+     */
+    public void addCustomer(Customer customer);
 }

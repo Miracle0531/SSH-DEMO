@@ -27,9 +27,15 @@ public interface CustomerDao {
     public void deleteCustomer(Customer customer);
 
     /**
-     *
      * @param id
      * @return
      */
     public Customer findCustomerById(Integer id);
+
+    /**
+     * 添加客户信息
+     *
+     * @param customer
+     */
+    public void addCustomer(Customer customer);
 }
