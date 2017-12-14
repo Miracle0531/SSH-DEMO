@@ -2,6 +2,8 @@ package com.itheima.service;
 
 import com.itheima.domain.UserMessage;
 
+import java.util.List;
+
 /**
  * 用户操作的逻辑接口
  *
@@ -15,4 +17,11 @@ public interface UserService {
      * @param userMessage
      */
     public void addUser(UserMessage userMessage);
+
+    /**
+     * 查询所有用户信息
+     *
+     * @return
+     */
+    public List<UserMessage> findAllUser();
 }

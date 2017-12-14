@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * 用户操作模块的逻辑实现类
  *
@@ -31,5 +33,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public void addUser(UserMessage userMessage) {
         userDao.addUser(userMessage);
+    }
+
+    /**
+     * 查询所有用户信息
+     *
+     * @return
+     */
+    @Override
+    public List<UserMessage> findAllUser() {
+        return userDao.findAllUser();
     }
 }
