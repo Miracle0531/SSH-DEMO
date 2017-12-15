@@ -16,6 +16,7 @@ import java.util.List;
  * @version 1.0, 2017-12-14 18:46
  */
 @Repository
+@SuppressWarnings("all")
 public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
 
     /**

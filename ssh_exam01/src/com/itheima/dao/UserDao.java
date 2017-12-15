@@ -17,12 +17,12 @@ public interface UserDao {
      *
      * @param userMessage
      */
-    public void addUser(UserMessage userMessage);
+    void addUser(UserMessage userMessage);
 
     /**
      * 查询所有用户信息
      *
      * @return
      */
-    public List<UserMessage> findAllUser();
+    List<UserMessage> findAllUser();
 }

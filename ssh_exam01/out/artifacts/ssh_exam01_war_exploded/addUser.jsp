@@ -9,7 +9,7 @@
     </head>
     <body>
         <center>
-            <form action="${pageContext.request.contextPath}/UserAction_addUser" method="post">
+            <form action="${pageContext.request.contextPath}/userAction_addUser.action" method="post">
                 <table width="500px">
                     <tr>
                         <td align="right">用户名：</td>
@@ -18,7 +18,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td align="right">用户名：</td>
+                        <td align="right">密码：</td>
                         <td align="left">
                             <input type="text" id="password" name="password">
                         </td>

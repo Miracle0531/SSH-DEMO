@@ -77,6 +77,7 @@
           <element id="file-copy" path="$PROJECT_DIR$/../../../apache-tomcat-7.0.79/lib/annotations-api.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../../apache-tomcat-7.0.79/lib/catalina-tribes.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../../apache-tomcat-7.0.79/lib/tomcat7-websocket.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/hibernate-core-4.3.10.Final.jar" />
         </element>
       </element>
     </root>

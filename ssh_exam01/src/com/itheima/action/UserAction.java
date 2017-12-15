@@ -40,6 +40,7 @@ public class UserAction extends ActionSupport implements ModelDriven<UserMessage
     /**
      * 注入UserService属性
      */
+    @Autowired
     private UserService userService;
 
     /**
@@ -47,7 +48,7 @@ public class UserAction extends ActionSupport implements ModelDriven<UserMessage
      *
      * @return
      */
-    @Action(value = "userAction_addUser", results = {@Result(name = "success", location = "findAllUser", type = "redirectAction")})
+    @Action(value = "userAction_addUser", results = {@Result(name = "success", location = "userAction_findAllUser", type = "redirectAction")})
     public String addUser() {
 
         userService.addUser(userMessage);
