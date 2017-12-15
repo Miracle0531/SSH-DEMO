@@ -20,11 +20,11 @@
                     <td align="center">客户密码</td>
                     <td align="center">操作</td>
                 </tr>
-                <s:iterator value="vs" var="userMessageList" status="s">
+                <s:iterator value="userMessageList" var="c" status="s">
                     <tr>
-                        <td align="center"><s:property value="id"/></td>
-                        <td align="center"><s:property value="username"/></td>
-                        <td align="center"><s:property value="password"/></td>
+                        <td align="center"><s:property value="#c.id"/></td>
+                        <td align="center"><s:property value="#c.username"/></td>
+                        <td align="center"><s:property value="#c.password"/></td>
                         <td align="center">
                             <a href="${pageContext.request.contextPath}/error.jsp">修改</a>
                             &nbsp;|&nbsp;
